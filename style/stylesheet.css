@@ -1,0 +1,69 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+font-family: 'Ranchers', cursive;
+}
+
+header.mainpart {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../foto/baletka.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+}
+
+.headtext{
+   float:right;
+    color:#b11414;
+}
+
+.navbar{
+background-color: white;
+     font-size:17px;
+}
+
+.aboutme{
+    background-color: #b11414;
+    color:#eaeaea;
+    padding: 140px;
+}
+
+.skills{
+    padding: 140px;
+}
+
+.icon{
+    font-size:80px;
+    letter-spacing: 20px;
+    color:#b11414;
+}
+
+
+
+@media (min-width: 992px) {
+  header.mainpart {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.mainpart h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mainpart h1 {
+    font-size: 3rem;
+  }
+}
+
+
+
+
+
+
