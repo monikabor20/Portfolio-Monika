@@ -6,8 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+
+    
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -17,25 +18,25 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-sm fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">O MNIE</a>
+                        <a class="nav-link" href="#services">O mnie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">UMIEJĘTNOŚCI</a>
+                        <a class="nav-link" href="#contact">Umiejętności</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">KONTAKT</a>
+                        <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
 
                 </ul>
@@ -48,26 +49,33 @@
             <div class="row headtext">
                 <div class="col-lg-12">
                     <h1>Monika Borawska</h1>
-
-
-                    <h2> Front-end Developer</h2>
-                </div>
-                <div class="col-lg-8 mx-auto">
-                    <a class="btn btn-danger btn-xl" href="#about">Zobacz moje CV</a>
+                    <h2>Junior Front-end Developer</h2>
                 </div>
             </div>
         </div>
     </header>
-
-
-    <div class="aboutme" id="about">
+    <div class="aboutme" id="aboutme">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
-                    <h2 class="section-heading">Kim jestem?</h2>
+                <div class="text-about-me col-lg-3 mx-auto text-center">
+                    <h2 class="section-heading">O mnie</h2>
                     <hr class="light my-4">
-                    <p class="text-faded mb-4">Nazywam się Monika Borawska i od roku jestem zafascynowana i kompletnie pochłonięta kodowaniem. Ta strona jest moim miejscem w sieci, w którym chcę dzielić się swoimi pracami, postępami i umiejętnościami. Przede mną jeszcze długa droga, dużo nauki, wiele nieprzespanych nocy spędzonych nad kodem, ale... nie mogę się już doczekać! </p>
-                    <a class="btn btn-light btn-xl" href="#services">Github</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 col-sm-8 col-md-8 col-lg-4 mx-auto mb-5">
+                    <img class="img-fluid" src="../foto-Monika.jpg" />
+                </div>
+                <div class="aboutme-text col-10 col-sm-12 col-md-12 col-lg-6 mx-auto mt-lg-4">
+                    <p> Nazywam się Monika Borawska i od roku jestem zafascynowana i kompletnie pochłonięta kodowaniem. Ta strona jest moim miejscem w sieci, w którym chcę dzielić się swoimi projektami, postępami i umiejętnościami. Przede mną jeszcze długa droga, dużo nauki, wiele nieprzespanych nocy spędzonych nad kodem, ale... nie mogę się już doczekać!
+                    </p>
+                    <div class="row">
+                        <div class="aboutme-buttons mx-auto mt-lg-3 text-center">
+                            <a class="btn mt-3 ml-4" href="#services">Github</a>
+                            <a class="btn mt-3 ml-4" href="#services">Linkedin</a>
+                            <a class="btn mt-3 ml-4" href="#services">CV</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,14 +117,77 @@
             </div>
         </div>
     </div>
+    <div class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="portfolio-head">Portfolio</h2>
+                    <hr class="my-4">
+                </div>
 
+            </div>
+            <div class="row">
+                <div class="project project-one">
+                    <div class="project-shadow">
+                        <h2 class="project-title">Strona Autoserwisu</h2>
+                        <a class="project-live" href="#">Live!</a>
+                        <a class="project-github" href="#">Github</a>
 
+                    </div>
+                </div>
 
+                <div class="project project-two">
 
+                    <div class="project-shadow">
+                        <h2 class="project-title">Kalkulator</h2>
+                        <a class="project-live" href="#">Live!</a>
+                        <a class="project-github" href="#">Github</a>
+                    </div>
+                </div>
 
+                <div class="project project-three">
 
+                    <div class="project-shadow">
+                        <h2 class="project-title">Prosty kalkulator</h2>
+                        <a class="project-live" href="#">Live!</a>
+                    </div>
+                </div>
 
+                <div class="project project-four">
 
+                    <div class="project-shadow">
+                        <h2 class="project-title">Szablon portfolio</h2>
+                        <a class="project-live" href="#">Live!</a>
+                    </div>
+                </div>
+
+                <div class="project project-five">
+                    <div class="project-shadow">
+                        <h2 class="project-title">To-do List</h2>
+                        <a class="project-live" href="#">Live!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="portfolio-head">Kontakt</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="email col-12 text-center">
+                    <p>monika.borawska20@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center col-12">
+        <p>Monika Borawska 2018 Copyright ©. All Rights Reserved. </p>
+    </footer>
 
     <script src="js/javascript.js"></script>
 

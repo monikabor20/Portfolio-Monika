@@ -1,69 +1,254 @@
 body,
 html {
-  width: 100%;
-  height: 100%;
-font-family: 'Ranchers', cursive;
+    width: 100%;
+    height: 100%;
+
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header.mainpart {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../foto/baletka.jpg");
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size:cover;
+    background-image: url("../foto/baletka.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 
-.headtext{
-   float:right;
-    color:#b11414;
+.headtext {
+    float: right;
+    color: #b11414;
 }
 
-.navbar{
-background-color: white;
-     font-size:17px;
+.navbar {
+    background-color: #ffffff;
+    font-size: 17px;
 }
 
-.aboutme{
+.nav-item a{
+    color:#585353;
+}
+
+
+.aboutme, .portfolio {
+    background-color: #ffffff;
+    color:#585353;
+ }
+
+.aboutme-text p{
+    text-align: center;
+    font-size:1.1rem;
+    letter-spacing: 2px;
+}
+
+.img-fluid{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.btn{
+    width: 120px;    
     background-color: #b11414;
-    color:#eaeaea;
-    padding: 140px;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.skills{
-    padding: 140px;
+.btn:hover{
+    background-color: #585353;
+    color:white;
 }
 
-.icon{
-    font-size:80px;
+.skills, .contact{
+    background-color: #b11414;
+    color:white;
+    
+}
+.contact{
+    color:white;
+}
+
+.skills, .contact, .aboutme, .portfolio {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.icon {
+    font-size: 80px;
     letter-spacing: 20px;
-    color:#b11414;
+    color: #ffffff;
+}
+
+.project-title {
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    top: -200px;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    color: #ffffff;
+   transition: all 0.5s cubic-bezier(0.4, 0, 0, 1.6);
 }
 
 
+
+.project {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto 2rem;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 37.5em) {
+    .project {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .project {
+        display: inline-block;
+        width: 45%;
+        margin-left: 25px;
+    }
+}
+
+.project-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.project-shadow:after {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1414;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    border-radius: 20px;
+    transition: all .3s ease;
+    content: '';
+}
+
+.project-live{
+    position: relative;
+    display: block;
+    width: 30%;
+    top: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    color: #d9bebe;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 1em;
+    transition: all 0.5s cubic-bezier(0.3, 0, 0, 1.3);
+
+}
+
+.project:hover .project-shadow:after {
+    opacity: 0.7;
+}
+
+.project-live:hover {
+    background-color: white;
+    color: #202020;
+    text-decoration: none;
+}
+
+.project-github{
+    position:relative;
+    display: block;
+    width: 30%;
+    top: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top:30px;
+    color: #d9bebe;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 1em;
+    transition: all 0.5s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.project-github:hover{
+    background-color: white;
+    color: #202020;
+    text-decoration: none;
+}
+
+. project: hover .project-github{
+    top:0;
+}
+
+
+.project:hover .project-title {
+    top: 0;
+}
+
+.project:hover .project-live {
+    top: 0;
+}
+
+.project-one {
+    background-image: url("../foto/autoserwis.PNG");
+}
+
+.project-two {
+    background-image: url("../foto/prosty-kalkulator.PNG");
+}
+
+.project-three {
+    background-image: url("../foto/kalkulator-JavaScript.PNG");
+}
+
+.project-four {
+    background-image: url("../foto/portfolio-pierwsze.PNG");
+}
+
+.project-five {
+    background-image: url("../foto/aplikacja-to-do.PNG");
+}
+
+.email {
+    font-size:1.5rem;
+        
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    position: absolute;
+}
+
+footer p {
+    padding: 15px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
 
 @media (min-width: 992px) {
-  header.mainpart {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.mainpart h1 {
-    font-size: 3rem;
-  }
+    header.mainpart {
+       min-height: 650px;
+       height: 100vh;
+    }
+    header.mainpart h1 {
+        font-size: 3rem;
+    }
 }
-
-@media (min-width: 1200px) {
-  header.mainpart h1 {
-    font-size: 3rem;
-  }
-}
-
-
-
-
-
-
