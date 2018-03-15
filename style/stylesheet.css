@@ -8,12 +8,16 @@ html {
     margin-right: auto;
 }
 
+
 header.mainpart {
     background-image: url("../foto/baletka.jpg");
     background-position: center;
     background-size: cover;
     padding-top: 12rem;
     padding-bottom: 12rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .headtext {
@@ -23,10 +27,12 @@ header.mainpart {
 .navbar {
     background-color: #ffffff;
     font-size: 17px;
+    
 }
 
 .nav-item a{
     color:#585353;
+   
 }
 
 .aboutme, .portfolio {
@@ -74,7 +80,7 @@ header.mainpart {
     transform: scale(1.45,1.47);
 }
 
-.skills, .contact{
+.skills{
     background-color: #b11414;
     color:white;
 }
@@ -84,7 +90,7 @@ header.mainpart {
 }
 
 .contact{
-    color:white;
+    color: #585353;
 }
 
 .skills, .contact, .aboutme, .portfolio {
@@ -93,13 +99,41 @@ header.mainpart {
    
 }
 
+.contact{
+   
+   position: relative;
+   background: #ffffff;
+  
+}
+
+.contact:after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url('../foto/contact2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+     background-attachment: fixed;
+}
+
+
 .icon{
     font-size: 80px;
     letter-spacing: 20px;
     color: #ffffff;  
 }    
 
-.email p, .contact p{
+.email p, .number p{
     
     transform: scale(1,1);
     transition-timing-function: ease-out;
@@ -110,10 +144,14 @@ header.mainpart {
     -moz-transform: scale(1,1);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 25ms;
+    position: relative;
+        top: 0px;
+    z-index: 3;
+    
 }
 
-.email p:hover, .contact p:hover{
-       transform: scale(1.35,1.37);
+.email p:hover, .number p:hover{
+    transform: scale(1.35,1.37);
     transition-timing-function: ease-out;
     transition-duration: 25ms;
     -webkit-transform: scale(1.35,1.37);
@@ -122,10 +160,10 @@ header.mainpart {
     -moz-transform: scale(1.35,1.37);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 25ms;
+  position: relative;
+       top: 0px;
+    z-index: 3;
 }
-
-
-
 
 .project-title {
     text-align: center;
