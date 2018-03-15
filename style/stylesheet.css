@@ -17,7 +17,6 @@ header.mainpart {
 }
 
 .headtext {
-    float: right;
     color: #b11414;
 }
 
@@ -30,11 +29,24 @@ header.mainpart {
     color:#585353;
 }
 
-
 .aboutme, .portfolio {
     background-color: #ffffff;
     color:#585353;
  }
+
+.broken-line{
+    border: 2px solid #b11414;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.broken-line-white{
+    border: 2px solid white;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
 .aboutme-text p{
     text-align: center;
@@ -48,23 +60,29 @@ header.mainpart {
 }
 
 .btn{
-    width: 120px;    
+    width: 120px;
     background-color: #b11414;
     color:white;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1,1);
 }
 
 .btn:hover{
     background-color: #585353;
     color:white;
+    transform: scale(1.45,1.47);
 }
 
 .skills, .contact{
     background-color: #b11414;
     color:white;
-    
 }
+
+.fa-envelope-open, .fa-phone{
+    font-size: 40px;
+}
+
 .contact{
     color:white;
 }
@@ -72,13 +90,42 @@ header.mainpart {
 .skills, .contact, .aboutme, .portfolio {
     padding-top: 8rem;
     padding-bottom: 5rem;
+   
 }
 
-.icon {
+.icon{
     font-size: 80px;
     letter-spacing: 20px;
-    color: #ffffff;
+    color: #ffffff;  
+}    
+
+.email p, .contact p{
+    
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 25ms;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 25ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 25ms;
 }
+
+.email p:hover, .contact p:hover{
+       transform: scale(1.35,1.37);
+    transition-timing-function: ease-out;
+    transition-duration: 25ms;
+    -webkit-transform: scale(1.35,1.37);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 25ms;
+    -moz-transform: scale(1.35,1.37);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 25ms;
+}
+
+
+
 
 .project-title {
     text-align: center;
@@ -92,8 +139,6 @@ header.mainpart {
    transition: all 0.5s cubic-bezier(0.4, 0, 0, 1.6);
 }
 
-
-
 .project {
     display: block;
     width: 100%;
@@ -104,20 +149,6 @@ header.mainpart {
     position: relative;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-}
-
-@media screen and (min-width: 37.5em) {
-    .project {
-        height: 300px;
-    }
-}
-
-@media screen and (min-width: 45em) {
-    .project {
-        display: inline-block;
-        width: 45%;
-        margin-left: 25px;
-    }
 }
 
 .project-shadow {
@@ -226,9 +257,8 @@ header.mainpart {
     background-image: url("../foto/aplikacja-to-do.PNG");
 }
 
-.email {
-    font-size:1.5rem;
-        
+.email, .number{
+    font-size:1.2rem;     
 }
 
 footer {
@@ -249,6 +279,21 @@ footer p {
        height: 100vh;
     }
     header.mainpart h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
+
+@media screen and (min-width: 37.5em) {
+    .project {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .project {
+        display: inline-block;
+        width: 45%;
+        margin-left: 25px;
+    }
+}
+
