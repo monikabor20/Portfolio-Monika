@@ -2,12 +2,10 @@ body,
 html {
     width: 100%;
     height: 100%;
-
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 header.mainpart {
     background-image: url("../foto/baletka.jpg");
@@ -27,86 +25,84 @@ header.mainpart {
 .navbar {
     background-color: #ffffff;
     font-size: 17px;
-    
 }
 
-.nav-item a{
-    color:#585353;
-   
+.nav-item a {
+    color: #585353;
 }
 
-.aboutme, .portfolio {
+.aboutme,
+.portfolio {
     background-color: #ffffff;
-    color:#585353;
- }
+    color: #585353;
+}
 
-.broken-line{
+.broken-line {
     border: 2px solid #b11414;
     width: 100px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.broken-line-white{
+.broken-line-white {
     border: 2px solid white;
     width: 100px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.aboutme-text p{
+.aboutme-text p {
     text-align: center;
-    font-size:1.1rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
-.img-fluid{
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+.img-fluid {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
-.btn{
+.btn {
     width: 120px;
     background-color: #b11414;
-    color:white;
+    color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #585353;
-    color:white;
-    transform: scale(1.45,1.47);
+    color: white;
+    transform: scale(1.45, 1.47);
 }
 
-.skills{
+.skills {
     background-color: #b11414;
-    color:white;
+    color: white;
 }
 
-.fa-envelope-open, .fa-phone{
-    font-size: 40px;
+.fa-envelope-open {
+    font-size: 50px;
 }
 
-.contact{
+.contact {
     color: #585353;
+    overflow: hidden;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    position: relative;
+    background: #ffffff;
 }
 
-.skills, .contact, .aboutme, .portfolio {
+.skills,
+.aboutme,
+.portfolio {
     padding-top: 8rem;
     padding-bottom: 5rem;
-   
 }
 
-.contact{
-   
-   position: relative;
-   background: #ffffff;
-  
-}
-
-.contact:after{
+.contact:after {
     content: ' ';
     position: absolute;
     left: 0;
@@ -123,156 +119,120 @@ header.mainpart {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-     background-attachment: fixed;
-}
-
-
-.icon{
-    font-size: 80px;
-    letter-spacing: 20px;
-    color: #ffffff;  
-}    
-
-.email p, .number p{
-    
-    transform: scale(1,1);
-    transition-timing-function: ease-out;
-    transition-duration: 25ms;
-    -webkit-transform: scale(1,1);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 25ms;
-    -moz-transform: scale(1,1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 25ms;
-    position: relative;
-        top: 0px;
-    z-index: 3;
-    
-}
-
-.email p:hover, .number p:hover{
-    transform: scale(1.35,1.37);
-    transition-timing-function: ease-out;
-    transition-duration: 25ms;
-    -webkit-transform: scale(1.35,1.37);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 25ms;
-    -moz-transform: scale(1.35,1.37);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 25ms;
-  position: relative;
-       top: 0px;
-    z-index: 3;
-}
-
-.project-title {
-    text-align: center;
-    position: relative;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    top: -200px;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-    color: #ffffff;
-   transition: all 0.5s cubic-bezier(0.4, 0, 0, 1.6);
-}
-
-.project {
-    display: block;
-    width: 100%;
-    height: 250px;
-    margin: 0 auto 2rem;
-    background-size: cover;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
     overflow: hidden;
 }
 
+.icon {
+    font-size: 80px;
+    letter-spacing: 20px;
+    color: #ffffff;
+}
+
+.email p {
+     position: relative;
+    top: 0px;
+    z-index: 3;
+    margin-bottom: 0px;
+    transform: scale(1,1);
+     transition-timing-function: ease-out;
+}
+
+.email p:hover {
+       transform: scale(1.35,1.37);
+    position: relative;
+    top: 0px;
+    z-index: 3;
+     margin-bottom: 0px;
+    
+}
+
 .project-shadow {
-    position: absolute;
     width: 100%;
     height: 100%;
+    position: absolute;
     top: 0;
     z-index: 10;
 }
 
 .project-shadow:after {
+    content: '';
     width: 100%;
+    border-radius: 10px;
     height: 100%;
-    background-color: #1d1414;
+    background-color: #202020;
     opacity: 0;
     position: absolute;
     top: 0;
     z-index: -10;
-    border-radius: 20px;
+    left: 0;
     transition: all .3s ease;
-    content: '';
 }
 
-.project-live{
+.project-title {
+    position: relative;
+    top: -200px;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 2.25rem;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.project-link {
     position: relative;
     display: block;
     width: 30%;
     top: 200px;
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
-    color: #d9bebe;
-    letter-spacing: 5px;
+    color: white;
     text-decoration: none;
     text-align: center;
     border: 2px solid white;
-    border-radius: 3px;
-    font-size: 1em;
-    transition: all 0.5s cubic-bezier(0.3, 0, 0, 1.3);
-
+    border-radius: 5px;
+    font-size: 1.25em;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
 }
 
-.project:hover .project-shadow:after {
-    opacity: 0.7;
-}
-
-.project-live:hover {
+.project-link:hover {
     background-color: white;
     color: #202020;
-    text-decoration: none;
 }
-
-.project-github{
-    position:relative;
-    display: block;
-    width: 30%;
-    top: 300px;
-    padding: 10px;
-    margin: 0 auto;
-    margin-top:30px;
-    color: #d9bebe;
-    letter-spacing: 5px;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 3px;
-    font-size: 1em;
-    transition: all 0.5s cubic-bezier(0.3, 0, 0, 1.3);
-}
-
-.project-github:hover{
-    background-color: white;
-    color: #202020;
-    text-decoration: none;
-}
-
-. project: hover .project-github{
-    top:0;
-}
-
 
 .project:hover .project-title {
     top: 0;
 }
 
-.project:hover .project-live {
+.project:hover .project-link {
     top: 0;
+}
+
+.project:hover .project-shadow:after {
+    opacity: .75;
+}
+
+.portfolio {
+    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.project {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto 2rem;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all .4s ease;
 }
 
 .project-one {
@@ -295,8 +255,8 @@ header.mainpart {
     background-image: url("../foto/aplikacja-to-do.PNG");
 }
 
-.email, .number{
-    font-size:1.2rem;     
+.email {
+    font-size: 1.2rem;
 }
 
 footer {
@@ -313,25 +273,32 @@ footer p {
 
 @media (min-width: 992px) {
     header.mainpart {
-       min-height: 650px;
-       height: 100vh;
+        min-height: 650px;
+        height: 100vh;
     }
     header.mainpart h1 {
         font-size: 2.5rem;
     }
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
     .project {
         height: 300px;
     }
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 790px) {
     .project {
         display: inline-block;
         width: 45%;
         margin-left: 25px;
     }
+    
+    .project-link{
+        width:45%;
+    }
 }
+
+
+
 

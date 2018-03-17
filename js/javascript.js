@@ -1,4 +1,4 @@
-$( window ).scroll(function() {
+$( window ).scroll(function changeNav () {
         var wys = $(window).scrollTop();
         if(wys > 600){
             $('.navbar').css("background-color", "#b11414");
@@ -8,3 +8,4 @@ $( window ).scroll(function() {
              $('.nav-item a').css("color", "#585353");
         }
     });
+
