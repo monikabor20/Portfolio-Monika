@@ -14,7 +14,6 @@ header.mainpart {
     padding-top: 12rem;
     padding-bottom: 12rem;
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     visibility: visible;
     animation-duration: 2s;
@@ -24,14 +23,21 @@ header.mainpart {
     animation-duration: 10s;
 }
 
-.headtext {
+.headtext h1,
+h2 {
     color: #b11414;
+    position: relative;
 }
 
 .navbar {
     background-color: #ffffff;
     font-size: 17px;
 }
+
+.navbar-expand-sm .navbar-collapse {
+    max-width: 2000px;
+}
+
 
 .nav-link:hover {
     background-color: #e5d8d8;
@@ -106,6 +112,10 @@ header.mainpart {
     background: #ffffff;
 }
 
+.skills-head {
+    color: white;
+}
+
 .skills,
 .aboutme,
 .portfolio {
@@ -155,7 +165,6 @@ header.mainpart {
     top: 0px;
     z-index: 3;
     margin-bottom: 0px;
-
 }
 
 .project-shadow {
@@ -196,7 +205,7 @@ header.mainpart {
 .project-link {
     position: relative;
     display: block;
-    width: 30%;
+    width: 40%;
     top: 200px;
     padding: 5px;
     margin: 0 auto;
@@ -292,19 +301,16 @@ footer p {
     letter-spacing: 2px;
 }
 
-@media (min-width: 992px) {
-    header.mainpart {
-        min-height: 650px;
-        height: 100vh;
-    }
-    header.mainpart h1 {
-        font-size: 2.5rem;
-    }
+.zoomIn {
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: zoomIn;
 }
 
-@media screen and (min-width: 600px) {
-    .project {
-        height: 300px;
+@media (max-width: 992px) {
+    .headtext h1,
+    h2 {
+        font-size: 1.8rem;
     }
 }
 
@@ -318,10 +324,72 @@ footer p {
     .project-link {
         width: 45%;
     }
+
 }
 
-.zoomIn {
-    visibility: visible;
-    animation-duration: 2s;
-    animation-name: zoomIn;
+@media screen and (max-width: 768px) {
+
+    .headtext h1,
+    h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .headtext {
+        background-color: white;
+        width: 24rem;
+        margin-right: auto;
+        margin-left: auto;
+        top: 150px;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
 }
+
+
+@media screen and (min-width: 600px) {
+    .project {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .aboutme-text p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .project-title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+
+    .project-link {
+        width: 50%;
+    }
+    .headtext h1,
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 320px) {
+
+        .project-link {
+            width: 70%;
+            top: 200px;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        .email {
+            font-size: 0.8rem;
+            word-wrap: break-word;
+        }
+
+    }
