@@ -1,6 +1,6 @@
 $( window ).scroll(function changeNav () {
         var wys = $(window).scrollTop();
-        if(wys > 600){
+        if(wys > 500){
             $('.navbar').css("background-color", "#b11414");
             $('.nav-item a').css("color", "white");
             

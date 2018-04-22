@@ -91,8 +91,15 @@ h2 {
 .btn:hover {
     background-color: #585353;
     color: white;
-    transform: scale(1.45, 1.47);
+    transform: scale(1.15, 1.17);
 }
+
+.article {
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+
+
 
 .skills {
     background-color: #b11414;
