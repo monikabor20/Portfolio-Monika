@@ -95,8 +95,8 @@ h2 {
 }
 
 .article {
-    white-space:normal !important;
-    word-wrap: break-word; 
+    white-space: normal !important;
+    word-wrap: break-word;
 }
 
 
@@ -269,7 +269,7 @@ h2 {
 }
 
 .project-two {
-    background-image: url("../foto/kalkulator-JavaScript.PNG");
+    background-image: url("../foto/mam-ten-kod.PNG");
     background-position: center;
     background-size: cover;
 }
@@ -292,8 +292,14 @@ h2 {
     background-size: cover;
 }
 
-.project-six{
+.project-six {
     background-image: url("../foto/cwiczenia.PNG");
+    background-position: center;
+    background-size: cover;
+}
+
+.project-seven {
+    background-image: url("../foto/kalkulator-JavaScript.PNG");
     background-position: center;
     background-size: cover;
 }
